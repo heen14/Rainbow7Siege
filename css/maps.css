@@ -1,0 +1,166 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:#161617;
+}
+
+header{
+    border: 0;
+    width: 100%;
+    color: white;
+}
+
+.ubipost{
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    text-align: center;
+    background-color:#161617;
+}
+
+#logoUbipost{
+    width: 6em;
+    height: 4.5em;
+}
+#logoRainbowSeven{
+    width: 10em;
+    height: 3em;
+}
+
+.navbar{        
+    width: 100%;
+    background-color:black;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdownMenu{
+    position: relative;
+    float: right;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+.navbar ul li{
+    font-size: 18px;
+    margin: 0px 25px 0px 0px;
+    width: 5em;
+    border-radius: 3px;
+    padding: 15px;
+
+}
+
+.navbar ul li a{	
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li:hover{
+    background-color: brown;
+}
+
+.subMenu{
+    display: none;
+}
+
+.navbar ul li:hover .subMenu{
+    border: 1px solid brown;
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 0.95em;
+    padding-right: 0.7em;
+}
+
+.subMenu ul{
+    width: 7em;
+    display: block;
+}
+
+.subMenu ul li{
+    width: 6em;
+    margin-bottom: 1.2em;
+}
+
+a.home{
+    font-size: 18px;
+}
+
+.content{
+    color: white;
+    text-align: center;
+}
+
+.content h1{
+    text-decoration: underline;
+    text-shadow: 0 0 5px black;
+
+}
+
+.content .list-maps{
+    position: relative;
+    display: inline-flex;
+}
+
+.content .list-maps .maps{
+    margin: 20px;
+    border-style: double;
+    border: 3px solid rgb(59, 59, 59);
+    box-shadow: 5px 10px black;
+}
+
+.content .list-maps .maps p{
+    font-weight: bold;
+    bottom: 0;
+    position: absolute;
+    font-size: 35px;
+    width: 400px;
+}
+
+.content .list-maps .maps img{
+   width: 400px;
+}
+
+
+
+
+footer{
+    width: 100%;
+    font-size: 15px;
+    bottom:0;
+    background-color: black;
+    color: white;
+    text-align: center;  
+}
+
+footer .contact img{
+    text-align: center;
+    width: 25px;
+
+}
+
+footer img{
+    width: 19px;    
+}
+
+footer .contact a img:hover{
+    background-color: brown;
+}
+
+footer .contact p{
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 800px){
+    .content .list-maps{
+        margin-top: 30px;
+        display: inline-block;
+    }
+}

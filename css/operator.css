@@ -1,0 +1,229 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:#161617;
+
+}
+
+.ubipost{
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    text-align: center;
+    background-color:#161617;
+}
+
+#logoUbipost{
+    width: 6em;
+    height: 4.5em;
+}
+#logoRainbowSeven{
+    width: 10em;
+    height: 3em;
+}
+
+.navbar{        
+    width: 100%;
+    background-color:black;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdownMenu{
+    position: relative;
+    float: right;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+.navbar ul li{
+    color: white;
+    font-size: 18px;
+    margin: 0px 25px 0px 0px;
+    width: 5em;
+    border-radius: 3px;
+    padding: 15px;
+
+}
+
+.navbar ul li a{	
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li:hover{
+    background-color: brown;
+}
+
+.subMenu{
+    display: none;
+}
+
+.navbar ul li:hover .subMenu{
+    border: 1px solid brown;
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 0.95em;
+    padding-right: 0.7em;
+}
+
+.subMenu ul{
+    width: 7em;
+    display: block;
+}
+
+.subMenu ul li{
+    width: 6em;
+    margin-bottom: 1.2em;
+}
+
+a.home{
+    font-size: 18px;
+}
+
+
+.content{
+
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    text-shadow: 0 0 15px black;
+    text-decoration: underline;
+}
+
+.content .text{
+    font-size: 20px;
+}
+
+
+.content .attacker,.content .defender{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.content .attacker img,.content .defender img{
+    width: 50px;
+}
+
+.content .attacker .attacker-character,.content .defender .defender-character{
+    margin-top: 30px;
+    display: inline-flex;
+}
+
+.content .attacker .player, .content .defender .player{
+    margin-left: 25px;
+    text-align: center;
+    border: 1px solid maroon;
+    box-shadow: 5px 10px black;
+    width: 6em;
+    height: 8em;
+}
+.content .attacker p, .content .defender p{
+    background-color: maroon;
+    font-size: 30px;
+}
+
+.content .attacker .player img, .content .defender .player img{
+    width: 3em;
+}
+
+.content .attacker .player .icon, .content .defender .player .icon{
+    width: 2em;
+}
+
+.content .attacker .player .ash,.content .attacker .player .iq,
+.content .attacker .player .thatcher{
+    width: 2.4em;
+    height: 5em;
+}
+
+.content .attacker .player .buck,.content .attacker .player .finka,
+.content .attacker .player .gridlock,.content .attacker .player .hibana,
+.content .attacker .player .ying, .content .defender .defender-character .alibi, 
+.content .defender .defender-character .doc, .content .defender .defender-character .kapkan, 
+.content .defender .defender-character .mute, .content .defender .defender-character .pulse, 
+.content .defender .defender-character .wamai{
+    width: 2em;
+}
+
+.content .attacker .player .fuze,.content .attacker .player .glaz,
+.content .attacker .player .sledge,.content .attacker .player .twitch, 
+.content .defender .defender-character .rook, .content .defender .defender-character .smoke, 
+.content .defender .defender-character .tachanka{
+    width: 2.5em;
+}
+
+.content .attacker .player .Dokkaebi,.content .attacker .player .iana,
+.content .attacker .player .kali,.content .attacker .player .nokk,
+.content .attacker .player .thermite, .content .defender .defender-character .castle, 
+.content .defender .defender-character .mozzie, .content .defender .defender-character .oryx, 
+.content .defender .defender-character .warden{
+    width: 1.65em;
+}
+
+.content .attacker .player .blackbeard,.content .attacker .player .zofia{
+    width: 3.2em;
+}
+.content .attacker .player .lion{
+    width: 3.5em;
+    height: 5em;
+}
+
+.content .defender p{
+    background-color: darkblue;
+}
+
+.content .defender .player{
+    border-color: darkblue;
+}
+
+.contact{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    font-size: 15px;
+    bottom:0;
+    background-color: black;
+    color: white;
+    text-align: center;  
+}
+
+footer .contact img{
+    text-align: center;
+    width: 25px;
+
+}
+
+footer img{
+    width: 19px;    
+}
+
+footer .contact a img:hover{
+    background-color: brown;
+}
+
+
+footer .contact p{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 800px){
+    .content .attacker .attacker-character,.content .defender .defender-character{
+        margin-top: 30px;
+        display: inline-block;
+    }
+}

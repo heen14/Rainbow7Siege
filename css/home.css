@@ -1,0 +1,281 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+header{
+    border: 0;
+    width: 100%;
+    height: 1000px;
+    color: white;
+}
+
+.ubipost{
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    text-align: center;
+    background-color:#161617;
+
+}
+
+#logoUbipost{
+    width: 6em;
+    height: 4.5em;
+}
+#logoRainbowSeven{
+    width: 10em;
+    height: 3em;
+}
+
+.navbar{        
+    width: 100%;
+    background-color:black;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdownMenu{
+    position: relative;
+    float: right;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+.navbar ul li{
+    font-size: 18px;
+    margin: 0px 25px 0px 0px;
+    width: 5em;
+    border-radius: 3px;
+    padding: 15px;
+
+}
+
+.navbar ul li a{	
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li:hover{
+    background-color: brown;
+}
+
+.subMenu{
+    display: none;
+}
+
+.navbar ul li:hover .subMenu{
+    border: 1px solid brown;
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 0.95em;
+    padding-right: 0.7em;
+}
+
+.subMenu ul{
+    width: 7em;
+    display: block;
+}
+
+.subMenu ul li{
+    width: 6em;
+    margin-bottom: 1.2em;
+}
+
+a.home{
+    font-size: 18px;
+}
+header .background{
+    background:linear-gradient( rgba(0, 0, 0, 0.692) 100%, rgba(0, 0, 0, 0.671)100%),url('../assets/background.jpg');
+    background-size: cover;
+}
+.slideshow-container {
+    
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    
+}
+
+.slideshow-container .eventImage img{
+    width: 100%;
+}
+
+.slideshow-container .eventImage{
+    display: none;
+    margin-top: 5%;
+}
+
+.slideshow-container .eventImage #event1{
+    height: 506px;
+}
+
+.slideshow-container .eventImage .text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 38px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+hr{
+    border: 1px solid rgb(41, 40, 40);
+}
+
+.content {
+    background: black;
+    display: block;
+    background:linear-gradient( rgba(0, 0, 0, 0.692) 100%, rgba(0, 0, 0, 0.671)100%),url('../assets/background\ Image.jpg');
+    background-size: cover;
+}
+
+.content .content-header{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 100px;
+    margin-top: -240px;
+    color: white;
+    text-align: center;
+}
+
+.content .content-header p{
+   font-size: 20px;
+}
+
+.content .update{
+   
+    margin: 100px;
+    border-left: 2px solid;
+    display: flex;
+}
+
+.content .update .text{
+    margin-left: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.content .update .textUpdate, .main-text{
+font-size: 18px;
+}
+
+.content .update img{
+    margin-left: 1%;
+}
+
+.content #steel-wave{
+   border-color: cornflowerblue;
+}
+
+.content #void-edge{
+    border-color: purple;
+}
+
+.content #parabellum{
+    border-color: khaki;
+}
+
+.content #blood-orchid{
+    border-color: darkred;
+}
+
+.content #velvet-shell{
+    border-color: darkviolet;
+}
+
+.content #grim-sky{
+    border-color: deepskyblue;
+}
+
+
+.content .year-2020 #year, .content .year-2019 #year{
+    text-align: center;
+    color: white;
+    border: 2px solid rgb(61, 60, 60);
+    background-color: rgb(41, 40, 40);
+}
+ 
+
+footer{
+    width: 100%;
+    font-size: 15px;
+    bottom:0;
+    background-color: black;
+    color: white;
+    text-align: center;  
+}
+
+footer .contact img{
+    text-align: center;
+    width: 25px;
+
+}
+
+footer img{
+    width: 19px;    
+}
+
+footer .contact a img:hover{
+    background-color: brown;
+}
+
+footer .contact p{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 800px){
+    .slideshow-container {
+        max-width: 500px;
+        position: relative;
+        margin: auto;
+        
+    }
+    .slideshow-container .eventImage #event1{
+        height: 285px;
+    }
+    .slideshow-container .eventImage .text{
+        font-size: 18px;
+    }
+    .content .content-header {
+        margin-top: -500px;
+    }
+    .content .content-header h1{
+        font-size: 22px;
+    }
+
+    .content .content-header p{
+        font-size: 16px;
+    }
+
+    .content .update img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .content .update .text .iconUpdate{
+        width: auto;
+    }
+
+    .content .update{
+        margin-left: 15%;
+        margin-bottom: 3%;
+    }
+
+    .content .update{
+        display: block;
+    }
+    
+    
+}
+

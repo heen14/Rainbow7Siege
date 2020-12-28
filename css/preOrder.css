@@ -1,0 +1,235 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:#161617;
+}
+
+header{
+    border: 0;
+    width: 100%;
+    color: white;
+}
+
+.ubipost{
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    text-align: center;
+    background-color:#161617;
+}
+
+#logoUbipost{
+    width: 6em;
+    height: 4.5em;
+}
+#logoRainbowSeven{
+    width: 10em;
+    height: 3em;
+}
+
+.navbar{        
+    width: 100%;
+    background-color:black;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdownMenu{
+    position: relative;
+    float: right;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+.navbar ul li{
+    font-size: 18px;
+    margin: 0px 25px 0px 0px;
+    width: 5em;
+    border-radius: 3px;
+    padding: 15px;
+
+}
+
+.navbar ul li a{	
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li:hover{
+    background-color: brown;
+}
+
+.subMenu{
+    display: none;
+}
+
+.navbar ul li:hover .subMenu{
+    border: 1px solid brown;
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 0.95em;
+    padding-right: 0.7em;
+}
+
+.subMenu ul{
+    width: 7em;
+    display: block;
+}
+
+.subMenu ul li{
+    width: 6em;
+    margin-bottom: 1.2em;
+}
+
+a.home{
+    font-size: 18px;
+}
+
+.content p{
+    margin-left: 5%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+
+.content .preOrder{
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 20px;
+    color: white;
+    display: flex;
+}
+
+.content .preOrder .form{
+    padding-left: 7%;
+    margin-top: 2%;
+}
+
+.content .preOrder .form label{
+    float: left;
+    margin-right: 0px;
+}
+
+
+.content .preOrder .form label[for="terms"]{
+ 
+    float: none;
+    font-size: 18px;
+}
+
+.content .preOrder .form input[type = "Email"],
+input[type = "text"],
+input[type = "password"]
+{   
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid brown;  
+    outline: none;
+    text-align: center;
+    width: 32em;
+    padding: 2%;
+    margin-top: 5%;
+    margin-bottom: 6%;
+    color: white;
+}
+
+.content .preOrder .form input[type = "Email"]::placeholder,
+input[type = "text"]::placeholder,
+input[type = "password"]::placeholder{
+    font-size: 15px;
+    color: grey;
+}
+
+.content .preOrder .form input[type = "Email"]:focus,
+input[type = "text"]:focus,
+input[type = "password"]:focus{
+    background: transparent;
+    outline: none;
+    border-color: rgb(175, 175, 6);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    box-shadow: 0 0 0 20px #161617 inset;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: white;
+}
+
+.content .preOrder .form label[for=copies]{ 
+    margin-top: 5%;
+    font-size: 23px;
+}
+
+.content .preOrder .form input[type = "Number"]{
+    text-align: center;
+    height: 4%;
+    width: 13%;
+    background-color: brown;
+    color: white;
+    margin-left: 5%;
+    margin-bottom: 6%;
+    margin-top: 4%;
+}
+
+.content .preOrder .form input[type = "Number"]::placeholder{
+    color: rgb(153, 150, 150);
+}
+
+.content .preOrder .form button[type="button"]{
+    margin-bottom: 5%;
+    margin-left: 23%;
+    margin-top: 7%;
+    color: whitesmoke;
+    width: 50%;
+    padding: 4%;
+    border-color: brown;
+    background-color: brown;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow:  0 4px 20px 0 brown;
+    border-radius: 20px;
+}
+
+.content .preOrder .form #preOrder-btn:hover{
+   background-color:  red;
+}
+
+footer{
+    width: 100%;
+    font-size: 15px;
+    bottom:0;
+    background-color: black;
+    color: white;
+    text-align: center;  
+}
+
+footer .contact img{
+    text-align: center;
+    width: 25px;
+}
+
+footer img{
+    width: 19px;    
+}
+
+footer .contact a img:hover{
+    background-color: brown;
+}
+
+footer .contact p{
+    font-size: 25px;
+}
